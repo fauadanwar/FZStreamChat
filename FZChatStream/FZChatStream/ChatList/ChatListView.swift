@@ -6,13 +6,42 @@
 //
 
 import SwiftUI
+import StreamChat
+import StreamChatSwiftUI
 
 struct ChatListView: View {
+    @State private var isCreateAlertPresented = false
+    @State private var newChannelName: String = ""
+    
+    var chatListViewModel: ChatListViewModelprotocol
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ChatChannelListView(channelListController: chatListViewModel.getChatChannelListView())
+                .navigationBarTitle("Chats", displayMode: .inline)
+                .navigationBarItems(trailing:
+                                        Button(action: {
+                    isCreateAlertPresented = true
+                }) {
+                    Image(systemName: "plus.circle")
+                        .imageScale(.large)
+                }
+                )
+                .alert("Create Channel", isPresented: $isCreateAlertPresented) {
+                    TextField("Channel Name", text: $newChannelName)
+                    Button("Create", action: createChannel)
+                    Button("Cancel", role: .cancel){}
+                } message: {
+                    Text("Enter the name for the new Channel")
+                }
+        }
+    }
+    
+    func createChannel() {
+        chatListViewModel.createNewChannel(name: newChannelName)
     }
 }
 
 #Preview {
-    ChatListView()
+    ChatListView(chatListViewModel: ChatListViewModel())
 }

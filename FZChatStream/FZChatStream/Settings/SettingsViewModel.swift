@@ -1,5 +1,5 @@
 //
-//  SettingViewModel.swift
+//  SettingsViewModel.swift
 //  FZChatStream
 //
 //  Created by fanwar on 11/11/23.
@@ -8,27 +8,26 @@
 import Foundation
 
 // Home ViewModel Protocol
-protocol SettingViewModelProtocol {
-    var settingModel: SettingModel { get }
+protocol SettingsViewModelProtocol {
+    var settingsModel: SettingsModel { get }
     var homeViewModel: HomeViewModelProtocol? { get }
     func logout()
 }
 
 // Home ViewModel
-class SettingViewModel: SettingViewModelProtocol {
+class SettingsViewModel: SettingsViewModelProtocol {
     var homeViewModel: HomeViewModelProtocol?
-    var settingModel: SettingModel
+    var settingsModel: SettingsModel
     
-    init(settingModel: SettingModel = SettingModel()) {
-        self.settingModel = settingModel
+    init(settingsModel: SettingsModel, homeViewModel: HomeViewModelProtocol?) {
+        self.settingsModel = settingsModel
+        self.homeViewModel = homeViewModel
     }
     
     func logout() {
         // Add any logout logic here
-        ChatManager.shared.signOut { [weak self] in
-            DispatchQueue.main.async {
-                self?.homeViewModel?.logout()
-            }
+        ChatManager.shared.signOut {
+            
         }
     }
 }

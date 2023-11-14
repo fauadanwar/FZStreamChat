@@ -7,5 +7,7 @@
 
 import Foundation
 
-class SettingsModel {
+struct SettingsModel {
+    let name: String
+    let imageName: String?
 }

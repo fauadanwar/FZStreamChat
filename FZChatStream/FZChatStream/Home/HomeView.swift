@@ -7,12 +7,25 @@
 
 import SwiftUI
 
+// Home View
 struct HomeView: View {
+    var homeViewModel: HomeViewModelProtocol
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ChatListView(chatListViewModel: homeViewModel.getChatListViewModel())
+                .tabItem {
+                    Label("Menu", systemImage: "message")
+                }
+            SettingsView(settingsViewModel: homeViewModel.getSettingsViewModel())
+                .tabItem {
+                    Label("Settings", systemImage: "gearshape")
+                }
+        }
+        .navigationBarBackButtonHidden(true)
     }
-}
+} 
 
 #Preview {
-    HomeView()
+    HomeView(homeViewModel: HomeViewModel())
 }

@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		180725542AFF6ADD00B8E00C /* FZChatStreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725532AFF6ADD00B8E00C /* FZChatStreamApp.swift */; };
-		180725562AFF6ADD00B8E00C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725552AFF6ADD00B8E00C /* ContentView.swift */; };
 		180725582AFF6ADE00B8E00C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180725572AFF6ADE00B8E00C /* Assets.xcassets */; };
 		1807255B2AFF6ADE00B8E00C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1807255A2AFF6ADE00B8E00C /* Preview Assets.xcassets */; };
 		180725652AFF6ADE00B8E00C /* FZChatStreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725642AFF6ADE00B8E00C /* FZChatStreamTests.swift */; };
 		1807256F2AFF6ADE00B8E00C /* FZChatStreamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807256E2AFF6ADE00B8E00C /* FZChatStreamUITests.swift */; };
 		180725712AFF6ADE00B8E00C /* FZChatStreamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725702AFF6ADE00B8E00C /* FZChatStreamUITestsLaunchTests.swift */; };
+		1807257F2AFF6B5600B8E00C /* StreamChatSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1807257E2AFF6B5600B8E00C /* StreamChatSwiftUI */; };
+		180725912AFFA65900B8E00C /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725902AFFA65900B8E00C /* ChatManager.swift */; };
+		180725962AFFA97000B8E00C /* ChannelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725952AFFA97000B8E00C /* ChannelListView.swift */; };
+		180725992AFFB1A300B8E00C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725982AFFB1A300B8E00C /* Utility.swift */; };
+		1807259B2AFFB1EB00B8E00C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807259A2AFFB1EB00B8E00C /* LoginView.swift */; };
+		1807259E2AFFB21200B8E00C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807259D2AFFB21200B8E00C /* LoginViewModel.swift */; };
+		180725A02AFFB21F00B8E00C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807259F2AFFB21F00B8E00C /* LoginModel.swift */; };
+		180725A32AFFBD7B00B8E00C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725A22AFFBD7B00B8E00C /* HomeView.swift */; };
+		180725A52AFFC9F600B8E00C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725A42AFFC9F600B8E00C /* HomeViewModel.swift */; };
+		180725AA2AFFE63000B8E00C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725A92AFFE63000B8E00C /* SettingsView.swift */; };
+		180725AD2AFFE67500B8E00C /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725AC2AFFE67500B8E00C /* ChatListView.swift */; };
+		180725AF2AFFF73800B8E00C /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725AE2AFFF73800B8E00C /* SettingsViewModel.swift */; };
+		180725B12AFFF74200B8E00C /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725B02AFFF74200B8E00C /* SettingsModel.swift */; };
+		180725B52B00B1BE00B8E00C /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180725B42B00B1BE00B8E00C /* ChatListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +49,6 @@
 /* Begin PBXFileReference section */
 		180725502AFF6ADD00B8E00C /* FZChatStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZChatStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		180725532AFF6ADD00B8E00C /* FZChatStreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZChatStreamApp.swift; sourceTree = "<group>"; };
-		180725552AFF6ADD00B8E00C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		180725572AFF6ADE00B8E00C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1807255A2AFF6ADE00B8E00C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		180725602AFF6ADE00B8E00C /* FZChatStreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FZChatStreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +56,19 @@
 		1807256A2AFF6ADE00B8E00C /* FZChatStreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FZChatStreamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1807256E2AFF6ADE00B8E00C /* FZChatStreamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZChatStreamUITests.swift; sourceTree = "<group>"; };
 		180725702AFF6ADE00B8E00C /* FZChatStreamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZChatStreamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		180725902AFFA65900B8E00C /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		180725952AFFA97000B8E00C /* ChannelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListView.swift; sourceTree = "<group>"; };
+		180725982AFFB1A300B8E00C /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		1807259A2AFFB1EB00B8E00C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1807259D2AFFB21200B8E00C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1807259F2AFFB21F00B8E00C /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		180725A22AFFBD7B00B8E00C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		180725A42AFFC9F600B8E00C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		180725A92AFFE63000B8E00C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		180725AC2AFFE67500B8E00C /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		180725AE2AFFF73800B8E00C /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		180725B02AFFF74200B8E00C /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		180725B42B00B1BE00B8E00C /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1807257F2AFF6B5600B8E00C /* StreamChatSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +120,15 @@
 		180725522AFF6ADD00B8E00C /* FZChatStream */ = {
 			isa = PBXGroup;
 			children = (
-				180725532AFF6ADD00B8E00C /* FZChatStreamApp.swift */,
-				180725552AFF6ADD00B8E00C /* ContentView.swift */,
-				180725572AFF6ADE00B8E00C /* Assets.xcassets */,
+				180725972AFFB18A00B8E00C /* Utility */,
+				180725892AFF998600B8E00C /* Others */,
+				180725882AFF97A000B8E00C /* Manager */,
 				180725592AFF6ADE00B8E00C /* Preview Content */,
+				180725AB2AFFE66200B8E00C /* ChatList */,
+				180725942AFFA96100B8E00C /* ChannelList */,
+				180725A82AFFE61C00B8E00C /* Settings */,
+				180725A12AFFBD5500B8E00C /* Home */,
+				1807259C2AFFB1EE00B8E00C /* Login */,
 			);
 			path = FZChatStream;
 			sourceTree = "<group>";
@@ -127,6 +158,77 @@
 			path = FZChatStreamUITests;
 			sourceTree = "<group>";
 		};
+		180725882AFF97A000B8E00C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				180725902AFFA65900B8E00C /* ChatManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		180725892AFF998600B8E00C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				180725572AFF6ADE00B8E00C /* Assets.xcassets */,
+				180725532AFF6ADD00B8E00C /* FZChatStreamApp.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		180725942AFFA96100B8E00C /* ChannelList */ = {
+			isa = PBXGroup;
+			children = (
+				180725952AFFA97000B8E00C /* ChannelListView.swift */,
+			);
+			path = ChannelList;
+			sourceTree = "<group>";
+		};
+		180725972AFFB18A00B8E00C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				180725982AFFB1A300B8E00C /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		1807259C2AFFB1EE00B8E00C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1807259F2AFFB21F00B8E00C /* LoginModel.swift */,
+				1807259D2AFFB21200B8E00C /* LoginViewModel.swift */,
+				1807259A2AFFB1EB00B8E00C /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		180725A12AFFBD5500B8E00C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				180725A42AFFC9F600B8E00C /* HomeViewModel.swift */,
+				180725A22AFFBD7B00B8E00C /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		180725A82AFFE61C00B8E00C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				180725B02AFFF74200B8E00C /* SettingsModel.swift */,
+				180725AE2AFFF73800B8E00C /* SettingsViewModel.swift */,
+				180725A92AFFE63000B8E00C /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		180725AB2AFFE66200B8E00C /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				180725B42B00B1BE00B8E00C /* ChatListViewModel.swift */,
+				180725AC2AFFE67500B8E00C /* ChatListView.swift */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +245,9 @@
 			dependencies = (
 			);
 			name = FZChatStream;
+			packageProductDependencies = (
+				1807257E2AFF6B5600B8E00C /* StreamChatSwiftUI */,
+			);
 			productName = FZChatStream;
 			productReference = 180725502AFF6ADD00B8E00C /* FZChatStream.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +320,9 @@
 				Base,
 			);
 			mainGroup = 180725472AFF6ADD00B8E00C;
+			packageReferences = (
+				1807257D2AFF6B5600B8E00C /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */,
+			);
 			productRefGroup = 180725512AFF6ADD00B8E00C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +365,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180725562AFF6ADD00B8E00C /* ContentView.swift in Sources */,
+				180725992AFFB1A300B8E00C /* Utility.swift in Sources */,
+				180725A52AFFC9F600B8E00C /* HomeViewModel.swift in Sources */,
+				180725A02AFFB21F00B8E00C /* LoginModel.swift in Sources */,
+				180725AF2AFFF73800B8E00C /* SettingsViewModel.swift in Sources */,
 				180725542AFF6ADD00B8E00C /* FZChatStreamApp.swift in Sources */,
+				180725AD2AFFE67500B8E00C /* ChatListView.swift in Sources */,
+				1807259E2AFFB21200B8E00C /* LoginViewModel.swift in Sources */,
+				180725912AFFA65900B8E00C /* ChatManager.swift in Sources */,
+				180725A32AFFBD7B00B8E00C /* HomeView.swift in Sources */,
+				1807259B2AFFB1EB00B8E00C /* LoginView.swift in Sources */,
+				180725962AFFA97000B8E00C /* ChannelListView.swift in Sources */,
+				180725B52B00B1BE00B8E00C /* ChatListViewModel.swift in Sources */,
+				180725B12AFFF74200B8E00C /* SettingsModel.swift in Sources */,
+				180725AA2AFFE63000B8E00C /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +545,8 @@
 				DEVELOPMENT_TEAM = ULX5P6QCP8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "SwiftUIChatDemo camera use";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "SwiftUIChatDemo photo use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +576,8 @@
 				DEVELOPMENT_TEAM = ULX5P6QCP8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "SwiftUIChatDemo camera use";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "SwiftUIChatDemo photo use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -588,6 +712,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1807257D2AFF6B5600B8E00C /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getstream/stream-chat-swiftui";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1807257E2AFF6B5600B8E00C /* StreamChatSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1807257D2AFF6B5600B8E00C /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */;
+			productName = StreamChatSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 180725482AFF6ADD00B8E00C /* Project object */;
 }

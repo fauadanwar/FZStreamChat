@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class LoginModel: ObservableObject {
+    @Published var errorText: String?
+}
